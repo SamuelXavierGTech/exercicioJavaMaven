@@ -28,16 +28,5 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Set up Node.js 20
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-
-    - name: Install Bats
-      run: npm install -g bats
-
-    - name: Verify Bats Installation
-      run: bats -v
-
     - name: Build with Maven
       run: mvn -B package --file pom.xml
