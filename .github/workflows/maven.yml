@@ -37,7 +37,7 @@ jobs:
       with:
         image: samuelxavier10/nomedaimagem 
         tags: 1.0, latest
-        registry: docker.io
+        registry: docker
         dockerfile: dockerfile
         username: ${{secrets.DOCKER_USER}}
         password: ${{secrets.DOCKER_PASSWORD}}
