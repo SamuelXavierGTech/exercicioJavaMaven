@@ -41,5 +41,7 @@ jobs:
         dockerfile: dockerfile
         username: ${{secrets.DOCKER_USER}}
         password: ${{secrets.DOCKER_PASSWORD}}
-    
+
+    - name: Usando o github.run_number
+      run: echo "${{github.run_number}}"
           
